@@ -1,0 +1,3 @@
+delacqua_face_block_homepage:
+    path:     /faceblock/{name}
+    defaults: { _controller: DelacquaFaceBlockBundle:Default:index, name: 'John' }

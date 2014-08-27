@@ -1,0 +1,7 @@
+parameters:
+#    delacqua_face_block.example.class: Delacqua\Bundle\FaceBlockBundle\Example
+
+services:
+#    delacqua_face_block.example:
+#        class: %delacqua_face_block.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}FaceBlock{% endblock %}</title>
+        {% stylesheets
+          '@DelacquaFaceBlockBundle/Resources/css/app.css'
+        %}
+          <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        <div id="content">
+            {% block body %}{% endblock %}
+        </div>
+        {% javascripts
+          '@DelacquaFaceBlockBundle/Resources/js/jquery.js'
+          '@DelacquaFaceBlockBundle/Resources/js/click-handlers.js'
+        %}
+          <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
     </body>
 </html>

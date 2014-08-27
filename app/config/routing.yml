@@ -1,0 +1,4 @@
+delacqua_face_block:
+    resource: "@DelacquaFaceBlockBundle/Resources/config/routing.yml"
+    prefix:   /
+
